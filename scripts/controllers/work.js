@@ -1,4 +1,4 @@
-angular.module('resumeExample').controller("workCtrl", function($scope,$rootScope, $http, $modal) {
+angular.module('resumeExample').controller("workCtrl", function($scope,$rootScope, $http) {
   $http.get('data1/resume.json').
     success(function(data, status, headers, config) {
         $scope.projectDetails = data;
@@ -52,4 +52,15 @@ angular.module('resumeExample').controller("workCtrl", function($scope,$rootScop
     directive.replace = 'true';
     directive.templateUrl = "views/popup.html";
     return directive;
+})
+//define service
+.service('setGet', function() {
+   var Details='';
+     this.set = function (index) {
+      Details= index;
+    },
+
+    this.get = function () {
+        return Details;
+    }
 })
