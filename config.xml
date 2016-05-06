@@ -33,6 +33,10 @@
     <splash src="images/calc-bg.jpg" platform="android" qualifier="port-xxhdpi" />
     <splash src="images/calc-bg.jpg" platform="android" qualifier="land-xxhdpi" /> -->
     
-    <gap:platform name="android" />
+    <gap:platforms>
+        <gap:platform name="ios" />
+        <gap:platform name="android" />
+        <gap:platform name="winphone" />
+    </gap:platforms>
 
 </widget>
