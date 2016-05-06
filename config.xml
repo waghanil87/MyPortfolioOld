@@ -22,6 +22,12 @@
         <icon src="res/android/aw-logo.png" density="hdpi" />
         <icon src="res/android/aw-logo.png" density="xhdpi" />
     </platform>
+    <platform name="ios">
+        <icon src="res/android/aw-logo.png" density="ldpi" />
+        <icon src="res/android/aw-logo.png" density="mdpi" />
+        <icon src="res/android/aw-logo.png" density="hdpi" />
+        <icon src="res/android/aw-logo.png" density="xhdpi" />
+    </platform>
     <splash src="res/android/calc-bg.png" platform="android" />
     
 
